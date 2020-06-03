@@ -1,4 +1,12 @@
-html {
+html, body {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	font-family: 'Quicksand', sans-serif;
+	color: #212121;
+	background: #fff;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -8,16 +16,6 @@ html {
 	-moz-box-sizing: inherit;
 	box-sizing: inherit;
 }
-body{
-	height: 100%;
-	width: 100%;
-	overflow-x: hidden;
-	padding: 0;
-	margin: 0;
-	font-family: 'Quicksand', sans-serif;
-	color: #212121;
-	background-color: #fff;
-}
 ::selection{
 	background-color: silver;
 	color: white;
@@ -25,6 +23,9 @@ body{
 canvas{
 	position: absolute;
 	top: 0;
+	right: 0;
+	bottom: 0;
 	left: 0;
 	margin: 0;
+	padding: 0;
 }
