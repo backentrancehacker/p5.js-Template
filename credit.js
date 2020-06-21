@@ -1,4 +1,4 @@
-function createCredit(git){
+function createCredit(git, twit){
 	let icons = document.createElement('div')
 	Object.assign(icons.style, {
 		position: 'fixed',
@@ -6,6 +6,7 @@ function createCredit(git){
 		right: '0.5em',
 		display: 'flex',
 		flexDirection: 'row',
+		userSelect: 'none',
 		zIndex: 10
 	})
 	let subIcons = [
@@ -44,10 +45,10 @@ function createCredit(git){
 	}
 
 	subIcons[0].querySelector('a').innerHTML = '<i class="fas fa-code-branch"></i>'
-	subIcons[0].querySelector('a').href = `https://github.com/backentrancehacker/${git}`
+	subIcons[0].querySelector('a').href = `https://github.com/backentrancehacker/${git || ''}`
 
 	subIcons[1].querySelector('a').innerHTML = '<i class="fab fa-twitter"></i>' 
-	subIcons[1].querySelector('a').href = 'https://twitter.com/AdCharity2'
+	subIcons[1].querySelector('a').href = `https://twitter.com/${twit || 'AdCharity2'}`
 	document.body.appendChild(icons)
 }
-createCredit('3DTileMap')
+createCredit()
