@@ -5,7 +5,6 @@ p5.js Template for experiments
 This is a simle html template to get p5.js running quickly. It includes
 * annoy developers by blocking common keybinds to view source code
 * credit yourself with a twitter and git repo
-* general meta tags based on assets.adcharity.tech
 
 ## Dependencies
 * Font Awesome
