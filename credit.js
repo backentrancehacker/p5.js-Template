@@ -45,10 +45,10 @@ function createCredit(git, twit){
 	}
 
 	subIcons[0].querySelector('a').innerHTML = '<i class="fas fa-code-branch"></i>'
-	subIcons[0].querySelector('a').href = `https://github.com/backentrancehacker/${git || ''}`
+	subIcons[0].querySelector('a').href = `https://github.com/nathan-pham/${git || ''}`
 
 	subIcons[1].querySelector('a').innerHTML = '<i class="fab fa-twitter"></i>' 
-	subIcons[1].querySelector('a').href = `https://twitter.com/${twit || 'AdCharity2'}`
+	subIcons[1].querySelector('a').href = `https://twitter.com/${twit || 'phamn23'}`
 	document.body.appendChild(icons)
 }
 createCredit()
